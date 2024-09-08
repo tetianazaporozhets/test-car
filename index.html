@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cars Spot</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital@0;1&family=Roboto+Flex:opsz@8..144&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-bg-color-light">
+
+    <!-- Home screen block -->
+      <header
+        class="section-container md:mb-[80px] mb-12 flex justify-between items-center py-4"
+      >
+        <a href="#"
+          ><img class="hover:cursor-pointer" src="./img/logo.svg" alt="logo"
+        /></a>
+        <ul class="flex gap-2 md:gap-6">
+          <li
+            class="text-base transition duration-300 ease-in-out cursor-pointer hover:text-accent-color"
+            
+          ><a href="#gallery">Galeria zdjęć</a>
+            
+          </li>
+          <li
+            class="text-base transition duration-300 ease-in-out cursor-pointer hover:text-accent-color"
+          >
+            <a href="#faq">FaQ</a>
+          </li>
+        </ul>
+        <button class="md:hidden">
+         <img class="w-7" src="./img/call-icon.png" alt="Call">
+        </button>
+        <button
+          class="btn-primary hidden md:block border-accent-color border-solid border-2 text-white bg-accent-color hover:cursor-pointer hover:bg-white hover:text-accent-color hover:border-solid hover:border-2 hover:border-accent-color"
+        >
+          Zadzwoń do nas
+        </button>
+      </header>
+
+      <!-- Home screen content -->
+      <section class="section-container mb-[230px] lg:mb-[300px] xl:mb-[362px]">
+        <div>
+          <h1
+            class="font-bebasNeue text-[44px] leading-[50px] md:text-[66px] md:leading-[73px] lg:text-[76px] lg:leading-[83px] tracking-tight mb-8"
+          >
+            Sprzedajemy samochody <br />
+            z europy
+          </h1>
+          <p class="font-robotoCondensed text-base w-72 leading-6 mb-6 md:mb-12">
+            Kup komfortowy pojazd, aby każda podróż była wyjątkowym przeżyciem.
+          </p>
+        </div>
+        <div class="flex gap-6">
+          <button
+            class="btn-primary border-accent-color border-solid border-2 text-white bg-accent-color hover:cursor-pointer hover:bg-white hover:text-accent-color hover:border-solid hover:border-2 hover:border-accent-color"
+          >
+            Zobacz zdjęcia
+          </button>
+          <button
+            class="btn-primary text-accent-color bg-white border-accent-color border-solid border-2 hover:bg-accent-color hover:text-white"
+          >
+            Zadzwoń do nas
+          </button>
+        </div>
+      </section>
+
+      <!--Background cars-->
+      <div class="bg-img "></div>
+
+      <!--Background element-->
+      <div class="bg-element"></div>
+    </section>
+
+    <!--Gallery block-->
+    <section id="gallery" class="overflow-hidden mb:mb-20 mb-7" >
+      <div class="section-container">
+      <h4 class="font-robotoCondensed text-[21px] leading-[23px] text-accent-color">Prezentacja firmy</h4>
+      <h2 class="font-bebasNeue text-[31px] leading-10 lg:text-[40px] lg:leading-[48px] mb-6">Zobacz naszą Galerię zdjęć</h2>
+      <ul class="flex gap-8 lg:gap-12 mb-4 lg:mb-20">
+        <li class="hover:text-accent-color active:text-accent-color cursor-pointer transition duration-300 ease-in-out">Samochody osobowe</li>
+        <li class="hover:text-accent-color active:text-accent-color cursor-pointer transition duration-300 ease-in-out">Samochody dostawcze</li>
+      </ul>
+
+        <!--Slider-->
+      <div class="swiper-container  mb-[100px] lg:mb-[152px] ">
+        <div class="swiper-wrapper ">
+          <div class="swiper-slide">
+            <img src="./img/image1.jpg" alt="Image 1" class="w-full h-auto object-cover" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/image2.jpg" alt="Image 2" class="w-full h-auto object-cover" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/image1.jpg" alt="Image 1" class="w-full h-auto object-cover" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/image2.jpg" alt="Image 2" class="w-full h-auto object-cover" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/image1.jpg" alt="Image 1" class="w-full h-auto object-cover" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    </section>
+
+    <!--SEO block-->
+    <section class=" bg-bg-color-dark border-b border-solid border-white" ">
+      <div id="faq" class="section-container flex flex-col md:flex-row gap-6 lg:gap-12 py-14 lg:py-[88px]" >
+
+        <!-- First accordion -->
+<div class="accordion-item  max-w-full md:w-full md:max-w-[50%]">
+  <h3 class="font-bebasNeue text-white text-[22px] leading-7 lg:text-[25px] lg:leading-[37px] tracking-tight mb-4">
+    Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit nulla commodo.
+  </h3>
+  
+  <p class="preview font-robotoCondensed text-white text-[14px] leading-4 mb-6">
+    Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et  [...]
+  </p>
+  
+  <p class="accordion-content mb-6 hidden font-robotoCondensed text-white text-[14px] leading-4">
+    Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, laudantium, est ab soluta, ducimus cupiditate quia adipisci sequi consequatur ipsum a. In tempora necessitatibus, quisquam cum autem id sapiente quasi. Animi itaque odit praesentium aliquid quae laudantium veritatis iure eaque fuga cupiditate consequuntur architecto modi molestiae quia incidunt, distinctio laboriosam?
+    <br>
+    Facilis, distinctio veritatis placeat asperiores itaque sint enim vitae delectus quisquam.
+  </p>
+  <button class="relative accordion-toggle font-robotoCondensed text-white text-[14px] leading-4 mb-6 flex items-center after:absolute after:left-0 after:-bottom-[9px] after:h-[1px] after:w-full after:scale-0 after:bg-white after:scale-100 after:transition-transform after:hover:bg-accent-color transition duration-300 ease-in-out">
+    Rozwiń
+    <img src="../img/arrow-icon.svg" class="arrow-icon ml-2">
+  </button>
+</div>
+
+        <!-- Second accordion section -->
+        <div class="accordion-item max-w-full md:w-full md:max-w-[50%]">
+          <h3 class="font-bebasNeue text-white text-[22px] leading-7 lg:text-[25px] lg:leading-[37px] tracking-tight mb-4">
+            Id nostrud enim esse consectetur in eu mollit fugiat aute. Velit nulla commodo.
+          </h3>
+          <p class="preview font-robotoCondensed text-white text-[14px] leading-4 mb-6">
+            Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et  [...]
+          </p>
+          
+          <p class="accordion-content mb-6 hidden font-robotoCondensed text-white text-[14px] leading-4">
+            Mauris varius ipsum mauris, rutrum lobortis magna efficitur a. Donec egestas, nisl vehicula feugiat ornare, diam turpis efficitur mi, ac venenatis eros ipsum ac arcu. Vestibulum et Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, laudantium, est ab soluta, ducimus cupiditate quia adipisci sequi consequatur ipsum a. In tempora necessitatibus, quisquam cum autem id sapiente quasi. Animi itaque odit praesentium aliquid quae laudantium veritatis iure eaque fuga cupiditate consequuntur architecto modi molestiae quia incidunt, distinctio laboriosam?
+            <br>
+            Facilis, distinctio veritatis placeat asperiores itaque sint enim vitae delectus incidunt harum, dolorum similique id maiores neque reprehenderit autem nisi ex repellendus a officia cum. Eum quam cum illo quisquam.
+          </p>
+          <button class="relative accordion-toggle font-robotoCondensed text-white text-[14px] leading-4 mb-6 flex items-center after:absolute after:left-0 after:-bottom-[9px] after:h-[1px] after:w-full after:scale-0 after:bg-white after:scale-100 after:transition-transform after:hover:bg-accent-color transition duration-300 ease-in-out">
+            Rozwiń
+            <img src="../img/arrow-icon.svg" class="arrow-icon ml-2">
+          </button>
+        </div>
+    </section>
+
+     <!--Footer block-->
+    <section class="bg-bg-color-dark py-4">
+      <div class="section-container flex justify-between">
+        <a
+        href="#"
+        class="font-robotoCondensed font-bold text-white text-center leading-6"
+        >Cars Spot</a
+      >
+      <a
+        href="#"
+        class="font-robotoCondensed text-white text-center leading-6 underline text-underline-offset-1 hover:text-accent-color transition duration-300 ease-in-out"
+        >Polityka prywatności</a
+      >
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
